@@ -1,14 +1,13 @@
-// const button = document.querySelector('.btn');
+const allBtn =  document.querySelectorAll('.btn');
 
-// function tog() {
-//     if(button.classList.toggle('unfollow')){
-//         button.innerText = 'Unfollow';
-//     }
-//     else{
-//         button.innerText = 'Follow';
-//     }
-// }
-
-// button.addEventListener('click', tog);
-
+for(let i of allBtn){
+    i.addEventListener('click', () => {
+        if(i.classList.toggle('unfollow')){
+            i.innerText = 'Unfollow';
+        }
+        else{
+            i.innerText = 'Follow';
+        }
+    })
+}
 
